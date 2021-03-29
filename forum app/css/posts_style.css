@@ -1,0 +1,87 @@
+*{
+    margin:0;
+    padding:0;
+    }
+
+/* ------------- head ------------*/
+.head{
+    background-color: rgb(10, 156, 253) ;
+    display: flex;
+}
+.head .logo{
+    color: white;
+    margin: 0.3em 0em 0em 1em;
+    font-size: 3em; 
+
+}
+
+.search{
+    margin: 1.5em 20em 1em 20em;
+    display: flex;
+
+}
+
+.search img{
+    background: rgba(255, 255, 255, 0.788);
+    /* border:2px solid black; */
+    padding: 4em;
+    zoom: 5%;
+    border-radius:  12% 0% 0% 12%;
+
+}
+.searchbar{
+    width: 30em;
+    padding: 0.1em 0.3em;
+    font-size: 1.2em;
+    border-radius: 0px 12px 12px 0px;
+    border:0px;
+}
+.username{
+    font-size: 1.2em;
+
+    margin: 1.5em 2em 0em 0em;
+}
+
+.head{
+    position: sticky;
+    top: 0;
+    
+  }
+
+/* ------------------------------- */
+
+/* 
+img{
+    padding: 10em;
+    zoom: 3%;
+} */
+
+.categorie-stats table {
+    margin: 50px;
+    padding: 100px;
+    width: 100px;
+    background-color: chartreuse;
+}
+textarea{
+    resize: none;
+}
+.create_posts{
+    background-color: cadetblue;
+    width: 600px ;
+    margin: 10px;
+    padding: 10px;
+}
+
+.posts{
+    background-color: cadetblue;
+    width: 600px;
+    margin: 10px;
+    padding: 10px;
+
+}
+.posts div{
+    background-color:darkgray;
+    width: auto;
+    margin: 10px;
+    padding: 10px;
+}
