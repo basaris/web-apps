@@ -1,7 +1,7 @@
 *{
     margin:0;
     padding:0;
-}
+    }
 
 /* ------------- head ------------*/
 .head{
@@ -68,75 +68,27 @@
 
 /*-----------the document ---------------*/
 
-.the_body{
-    display: flex;
 
-}
-
-body{
-    background: rgb(214, 233, 241);
-}
 
 /* ----------categorie information ------------ */
 
 
 
 
-.categorie-info .ci_box {
-    margin: 5em;
-    padding: 5em;
-    
-    background-color: rgb(45, 138, 245);
-    
-}
-
-.categorie-info .ci_btn button {
-
-    padding: 1.2em 4em;
-    margin: 0em 0em 0em 10em;
-
-    background-color: rgb(45, 138, 245);
-    outline: none;
-    border-radius: 0.5em;
+.categorie-info table {
+    margin: 50px;
+    padding: 100px;
+    width: 100px;
+    background-color: chartreuse;
     
 }
 
-
-.categorie-info button{
-    padding: 0.6em 1.2em;
-}
-
-.categorie-info p{
-    width: 15em;
-}
-
-
-/* ----------create posts ------------ */
-.txtArea{
-    resize: none;
-    flex-grow:1;
-
-    padding: 0.1em 0.3em;
-    font-size: 1.2em;
-    border:0px;
-    outline: none;
-    background: rgb(214, 233, 241);;
-
-}
-
-.create_posts{
-    background-color: rgb(20, 125, 245);
-    width: auto;
-    margin: 10px;
-    padding: 10px;
-    display: flex;
-}
 
 
 /* ----------the posts ------------ */
 
 .posts{
-    background-color: rgb(20, 125, 245);
+    background-color: cadetblue;
     width: 600px;
     margin: 10px;
     padding: 10px;
@@ -144,7 +96,7 @@ body{
 }
 
 .posts div{
-    background-color:rgb(214, 233, 241);
+    background-color:darkgray;
     width: auto;
     margin: 10px;
     padding: 10px;
