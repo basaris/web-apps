@@ -3,8 +3,18 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 .nav {
-    background-color: aquamarine;
+    color: #fafafa;
+    background-color: #FF4242;
+}
+
+.logo-title {
+    font-weight: 300;
+}
+
+.logo-title::after {
+    content: "  /";
 }
