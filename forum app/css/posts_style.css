@@ -5,7 +5,7 @@
 
 /* ------------- head ------------*/
 .head{
-    background-color: rgb(10, 156, 253) ;
+    background-color: #FF4242;
     display: flex;
 }
 .head .logo{
@@ -42,7 +42,7 @@
 
     margin: 1.2em 2em 0.5em 0em;
     border: 2px solid black;
-    background-color: rgb(10, 156, 253) ;
+    background-color: #FF4242;
     color: white;
     border-radius: 10px;
     outline: none;
@@ -59,10 +59,13 @@
 /* ----------categorie name ------------ */
 
 .categorie-name{
-    background: rgb(15, 94, 240);
-    text-align: center;
-    /* margin: 2em 40em; */
+    background: rgba(0, 0, 0, .6);
+    /* text-align: center; */
+    margin: 2em 44em;
+    padding: 0.3em 7em;
     color: white;
+    border-radius: 0.5em;
+    display: inline-block;
 }
 
 
@@ -73,9 +76,9 @@
 
 }
 
-body{
-    background: rgb(214, 233, 241);
-}
+/* body{
+    background: rgb(255, 247, 247);
+} */
 
 /* ----------categorie information ------------ */
 
@@ -86,7 +89,9 @@ body{
     margin: 5em;
     padding: 5em;
     
-    background-color: rgb(45, 138, 245);
+    background-color: rgba(0, 0, 0, .6);
+    color: white;
+    
     
 }
 
@@ -95,7 +100,7 @@ body{
     padding: 1.2em 4em;
     margin: 0em 0em 0em 10em;
 
-    background-color: rgb(45, 138, 245);
+    background-color: rgba(0, 0, 0, .6);
     outline: none;
     border-radius: 0.5em;
     
@@ -104,6 +109,7 @@ body{
 
 .categorie-info button{
     padding: 0.6em 1.2em;
+    color: white;
 }
 
 .categorie-info p{
@@ -120,12 +126,20 @@ body{
     font-size: 1.2em;
     border:0px;
     outline: none;
-    background: rgb(214, 233, 241);;
+    border-radius: 0.4em 0em 0em 0.4em;
+    /* background: rgb(214, 233, 241);; */
 
+}
+.txtAreaBtn{
+    background: white;
+    padding: 0em 0.2em;
+    margin: 0em 0em 0em 0.3em;
+    border-radius: 0em 0.7em 0.7em 0em;
+    outline: none;
 }
 
 .create_posts{
-    background-color: rgb(20, 125, 245);
+    background-color: rgba(0, 0, 0, .6);
     width: auto;
     margin: 10px;
     padding: 10px;
@@ -135,17 +149,32 @@ body{
 
 /* ----------the posts ------------ */
 
-.posts{
-    background-color: rgb(20, 125, 245);
+/* .posts{
+    background-color: rgba(0, 0, 0, .6);
     width: 600px;
     margin: 10px;
     padding: 10px;
 
-}
+} */
 
 .posts div{
-    background-color:rgb(214, 233, 241);
-    width: auto;
+    background-color:rgba(0, 0, 0, .6);
+    width: 600px;
     margin: 10px;
     padding: 10px;
+    color: white;
 }
+
+.posts div p{
+    /* background: #ff6b6b; */
+    min-height: 5em;
+}
+
+.posts div label:first-child{
+    padding: 0.2em 2em;
+    background: #FF4242;
+}
+
+/* .posts div label:last-child{
+    background: #ff6b6b;
+} */
