@@ -25,7 +25,7 @@
     <div class="container-fluid">
     <!-- head -->
     <div class="head row">
-        <div class="logo col-2 col-sm-4">
+        <div class="logo col-4">
             <!-- <img src="image/logo.png" alt="formumpic"> -->
             <label for="headname" class="headname">ReadIT</label>
         </div>
@@ -45,14 +45,17 @@
     </div>
 
     <!-- The categorie -->
-    <div class="categorie-name">
-        <h1>Example1</h1>
+    <div class="categorie-name container-fluid text-center">
+        <h1 class="m-3 px-5 py-1">Example1</h1>
     </div>
 
-    <div class="the_body">
+    
+
+    <div class="the_body container-fluid row">
     <!-- Categorie information -->
-    <div class="categorie-info">
-        <div class="ci_box">
+    <div class="col-4">
+    <div class="categorie-info col-9">
+        <div class="ci_box m-3 p-5">
         <table>
             <tr>
                 <th>Categorie:</th>
@@ -86,20 +89,21 @@
         </div>
 
         <div class="ci_btn">
-            <button> Subscribe </button>
+            <button class=" mx-5 px-5 py-2"> Subscribe </button>
         </div>
+    </div>
     </div>
 
     <!-- post area -->
-    <div class="posts_box">
+    <div class="posts_box col-5">
         <!-- create posts -->
-        <div class="create_posts">
+        <div class="create_posts p-2">
             <textarea id="c_posts" class="txtArea" name="c_posts" rows="4" cols="50" placeholder="Write your post..."></textarea>
             <button class="txtAreaBtn"> Create Post</button>
         </div>
 
         <!-- the posts -->
-        <div class="posts">
+        <div class="posts ">
             <div>
                 <label for="name">Posted by name1</label>
                 <br>

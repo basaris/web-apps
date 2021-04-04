@@ -5,30 +5,24 @@
 
 /* ------------- head ------------*/
 .head{
-    background-color: #FF4242;
+    background-color: #FF4242 ;
     display: flex;
 }
 .head .logo{
     color: white;
-    /* margin: 0.15em 0em 0em 1em; */
     font-size: 2.4em; 
     
 }
-/* .logo img{
-    padding: 4em;
-    margin: 5em 0em;
-    zoom: 5%;
-} */
 
 .search{
-    /* margin: 1em 30em 0.5em 10em; */
+
     display: flex;
 
 }
 
 .search img{
     background: rgba(255, 255, 255, 0.788);
-    /* border:2px solid black; */
+
     padding: 5em;
     zoom: 5%;
     border-radius:  12% 0% 0% 12%;
@@ -45,7 +39,6 @@
 .username{
     font-size: 1.2em;
 
-    /* margin: 1.2em 2em 0.5em 0em; */
     border: 2px solid black;
     background-color: #FF4242;
     color: white;
@@ -63,47 +56,26 @@
 
 /* ----------categorie name ------------ */
 
-.categorie-name{
+.categorie-name h1{
     background: rgba(0, 0, 0, .6);
-    /* text-align: center; */
-    margin: 2em 44em;
-    padding: 0.3em 7em;
+
     color: white;
-    border-radius: 0.5em;
+    border-radius: 0.2em;
     display: inline-block;
 }
 
 
-/*-----------the document ---------------*/
-
-.the_body{
-    display: flex;
-
-}
-
-/* body{
-    background: rgb(255, 247, 247);
-} */
-
 /* ----------categorie information ------------ */
 
-
-
-
 .categorie-info .ci_box {
-    margin: 5em;
-    padding: 5em;
     
     background-color: rgba(0, 0, 0, .6);
     color: white;
-    
+    border-radius: 10px;
     
 }
 
 .categorie-info .ci_btn button {
-
-    padding: 1.2em 4em;
-    margin: 0em 0em 0em 10em;
 
     background-color: rgba(0, 0, 0, .6);
     outline: none;
@@ -113,16 +85,19 @@
 
 
 .categorie-info button{
-    padding: 0.6em 1.2em;
+
     color: white;
 }
 
-.categorie-info p{
-    width: 15em;
+/* ----------create posts ------------ */
+
+.create_posts{
+    background-color: rgba(0, 0, 0, .6);
+
+    display: flex;
+    border-radius: 10px;
 }
 
-
-/* ----------create posts ------------ */
 .txtArea{
     resize: none;
     flex-grow:1;
@@ -132,7 +107,7 @@
     border:0px;
     outline: none;
     border-radius: 0.4em 0em 0em 0.4em;
-    /* background: rgb(214, 233, 241);; */
+
 
 }
 .txtAreaBtn{
@@ -143,35 +118,21 @@
     outline: none;
 }
 
-.create_posts{
-    background-color: rgba(0, 0, 0, .6);
-    width: auto;
-    margin: 10px;
-    padding: 10px;
-    display: flex;
-}
+
 
 
 /* ----------the posts ------------ */
 
-/* .posts{
-    background-color: rgba(0, 0, 0, .6);
-    width: 600px;
-    margin: 10px;
-    padding: 10px;
-
-} */
-
 .posts div{
     background-color:rgba(0, 0, 0, .6);
-    width: 600px;
-    margin: 10px;
-    padding: 10px;
+
+    margin: 10px 0px;
+    padding: 15px ;
+    border-radius: 10px;
     color: white;
 }
 
 .posts div p{
-    /* background: #ff6b6b; */
     min-height: 5em;
 }
 
@@ -179,7 +140,3 @@
     padding: 0.2em 2em;
     background: #FF4242;
 }
-
-/* .posts div label:last-child{
-    background: #ff6b6b;
-} */
