@@ -1,5 +1,13 @@
+function swiper_resp(window) {
+    if ($(window).width() < 992) {
+        spv = 2;
+    } else spv = 3;
+}
+
+swiper_resp($(window));
+
 var swiper = new Swiper('.swiper-container', {
-    slidesPerView: 3,
+    slidesPerView: spv,
     spaceBetween: 30,
     slidesPerGroup: 3,
     loop: true,
