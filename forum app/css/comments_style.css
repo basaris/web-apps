@@ -5,48 +5,43 @@
 
 /* ------------- head ------------*/
 .head{
-    background-color: #FF4242;
+    background-color: #FF4242 ;
     display: flex;
 }
 .head .logo{
     color: white;
-    margin: 0.15em 0em 0em 1em;
     font-size: 2.4em; 
-
+    
 }
 
-.search{
-    margin: 1em 30em 0.5em 20em;
+/* .search{
+
     display: flex;
 
-}
+} */
 
 .search img{
-    background: rgba(255, 255, 255, 0.788);
-    /* border:2px solid black; */
-    padding: 4em;
-    zoom: 5%;
+    background: white;
+
     border-radius:  12% 0% 0% 12%;
 
 }
 .searchbar{
-    width: 33em;
+    width: 70%;
     padding: 0.1em 0.3em;
     font-size: 1.2em;
     border-radius: 0px 12px 12px 0px;
     border:0px;
     outline: none;
 }
-.username{
-    font-size: 1.2em;
 
-    margin: 1.2em 2em 0.5em 0em;
-    border: 2px solid black;
+.dropdown button{
     background-color: #FF4242;
-    color: white;
     border-radius: 10px;
+    border: 2px solid black;
     outline: none;
 }
+
 
 .head{
     position: sticky;
@@ -54,163 +49,128 @@
     
   }
 
-
 /* ----------categorie name ------------ */
 
-.categorie-name{
+.categorie-name h1{
     background: rgba(0, 0, 0, .6);
-    /* text-align: center; */
-    margin: 2em 44em;
-    padding: 0.3em 7em;
+
     color: white;
-    border-radius: 0.5em;
+    border-radius: 0.2em;
     display: inline-block;
 }
 
 
 /*-----------the document ---------------*/
 
-.the_body{
+/* .the_body{
     display: flex;
 
-}
-
-/* body{
-    background: rgb(214, 233, 241);
 } */
+
 
 /* ----------categorie information ------------ */
 
 
 
-
 .categorie-info .ci_box {
-    margin: 5em;
-    padding: 5em;
     
     background-color: rgba(0, 0, 0, .6);
     color: white;
+    border-radius: 10px;
     
 }
 
-/* .categorie-info .ci_btn button {
-
-    padding: 1.2em 4em;
-    margin: 0em 0em 0em 10em;
-
-    background-color: rgba(0, 0, 0, .6);
-    outline: none;
-    border-radius: 0.5em;
-    
-} */
 
 
-.categorie-info button{
-    padding: 0.6em 1.2em;
-}
-
-.categorie-info p{
-    width: 15em;
-}
-
-
-
-/* ----------create posts ------------ */
-
-.post_box{
-    display: flex;
-    flex-direction: column;
-}
-.comment_box{
-    display: flex;
-    flex-direction: column;
-}
-.txtArea{
-    resize: none;
-    flex-grow:1;
-
-    
-    padding: 0.1em 0.3em;
-    font-size: 1.2em;
-    border:0px;
-    outline: none;
-    /* background: white */
-
-}
-
-.post_comment{
-    background-color: rgba(0, 0, 0, .6);
-    width: 600px;
-    margin: 10px;
-    padding: 10px;
-    display: flex;
-}
-
-/* .comments{
-    background-color: rgb(20, 125, 245);
-    width: auto;
-} */
-
-.the_comment{
-    
-    background: rgba(0, 0, 0, .6);
-    width: 600px;
-    margin: 10px;
-    padding: 10px;
-    color: white;
-}
-
-.the_comment  p{
-    /* background: yellow; */
-    min-height: 5em;
-}
-
-.the_comment  label:first-child{
-    padding: 0.2em 2em;
-    background: #FF4242;
-}
-
-/* .the_comment  label:last-child{
-    background: violet;
-} */
-
-
-
-/* ----------the posts ------------ */
-
-.comment_box{
-    /* background-color: rgba(0, 0, 0, .6); */
-    display: flex;
-    flex-direction: column;
-}
+/* ----------posts ------------ */
 
 .posts{
-    /* background-color: rgba(0, 0, 0, .6); */
-    width: 600px;
-    margin: 10px;
-    padding: 10px;
     color: white;
 }
 
 .posts div{
     background-color:rgba(0, 0, 0, .6);
-    width: auto;
-    margin: 10px;
-    padding: 10px;
+    border-radius: 6px;
 }
 
 .posts div p{
-    /* background: yellow; */
     min-height: 5em;
 }
 
 .posts div label:first-child{
     padding: 0.2em 2em;
     background: #FF4242;
+    border-radius: 6px;
 }
 
-/* .posts div label:last-child{
-    background: violet;
-} */
+.posts div button{
+    padding: 0.2em 2em;
+    background: #FF4242;
+    border-radius: 6px;
+    color: white;
+}
+
+/* -------comments---------- */
+
+.post_comment{
+    background-color: rgba(0, 0, 0, .6);
+    display: flex;
+
+    border-radius: 6px;
+}
+
+.txtArea{
+    resize: none;
+    flex-grow:1;
+    
+    padding: 0.1em 0.3em;
+    font-size: 1.2em;
+    border:0px;
+    outline: none;
+    border-radius: 0.4em 0em 0em 0.4em;
+
+
+}
+.txtAreaBtn{
+    /* background: rgba(0, 0, 0, .6); */
+    /* padding: 0em 0.2em;
+    margin: 0em 0em 0em 0.3em; */
+    border-radius: 0em 0.7em 0.7em 0em;
+    outline: none;
+}
+
+
+.the_comment{
+    
+    background: rgba(0, 0, 0, .6);
+    
+    margin: 10px;
+    padding: 10px;
+    color: white;
+}
+
+.the_comment  p{
+    min-height: 5em;
+}
+
+.the_comment  label:first-child{
+    padding: 0.2em 2em;
+    background: #FF4242;
+    border-radius: 6px;
+}
+
+.comment_box ul{
+    list-style-type: none;
+  
+}
+
+.comment_box ul button{
+    padding: 0.2em 2em;
+    background: #FF4242;
+    border-radius: 6px;
+    color: white;
+}
+
+
 
 

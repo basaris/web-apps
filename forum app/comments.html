@@ -4,151 +4,151 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forum</title>
+    <title>ReadIT</title>
+    <meta name="description" content="ReadIT | Connect with anyone, from anywhere." />
+    <link rel=" canonical " href="" />
+    <meta property="og:locale " content="en_US " />
+    <meta property="og:type " content="website " />
+    <meta property="og:title " content="ReadIT | Connect with anyone, from anywhere. " />
+    <meta property="og:description " content="Connect with everyone on the pixel world until you go out on the real world. " />
+    <meta property="og:url " content=" " />
+    <meta property="og:site_name " content="ReadIT" />
+    <meta property="og:image " content="" />
+    <meta property="og:image:width " content="" />
+    <meta property="og:image:height " content="" />
+    <link rel="icon" href="image/logo.png" type="image/x-icon">
+    <link rel="stylesheet " href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css ">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
     <link rel="stylesheet" href="css/comments_style.css">
 </head>
 
 <body>
+    <div class="container-fluid">
     <!-- head -->
-    <div class="head">
-        <div class="logo">
-            <!-- <img src="image/pic.png" alt="formumpic"> -->
+    <div class="head row">
+        <div class="logo col-3">
+            <!-- <img src="image/logo.png" alt="formumpic"> -->
             <label for="headname" class="headname">ReadIT</label>
         </div>
 
-        <div class="search">
-            <img src="image/search_pic.png" alt="searchbar">
+        <div class="search col-6 my-3 row">
+            <img src="image/search_pic.png" alt="searchbar" class="p-1">
             <input type="search" class="searchbar" id="searchbar" placeholder="Search...">
         </div>
 
         <!-- <label for="username" class="username">nickname</label> -->
-        <select name="username" class="username">
-            <option value="kartela">username</option>
-            <option value="foit">view profile</option>
-          </select>
+        <div class="dropdown col-3 my-auto">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              username
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="profile.html">View profile</a>
+            </div>
+          </div>
     </div>
 
-    <!-- The categorie -->
-    <div class="categorie-name">
-        <h1>Example1</h1>
+    <!-- The categorie name -->
+    <div class="categorie-name text-center">
+        <h1 class="m-5 px-5 py-2">Testing the site</h1>
     </div>
 
-    <div class="the_body">
+
+    <div class="the_body row">
     <!-- Categorie information -->
-    <div class="categorie-info">
-        <div class="ci_box">
-        <table>
-            <tr>
-                <th>Categorie:</th>
-                <th>Example1</th>
-            </tr>
-            <tr>
-                <th>Posts:</th>
-                <th>12</th>
-            </tr>
-            <tr>
-                <th>Created by:</th>
-                <th>Name1</th>
-            </tr>
-            <tr>
-                <th>Subscribed:</th>
-                <th>10</th>
-            </tr>
-        </table>
-        <br>
-        <p><strong>More information: </strong> </p>
-        <br>
+    <div class="col-4">
+    <div class="categorie-info col-9">
+        <div class="ci_box m-3 p-5">
+            <table>
+                <tr>
+                    <th>Categorie:</th>
+                    <th>Testing the site</th>
+                </tr>
+                <tr>
+                    <th>Posts:</th>
+                    <th>1</th>
+                </tr>
+                <tr>
+                    <th>Created by:</th>
+                    <th>vasilis</th>
+                </tr>
+                <tr>
+                    <th>Subscribed:</th>
+                    <th>0</th>
+                </tr>
+            </table>
+            <br>
+            <p><strong>More information: </strong> </p>
+            <br>
+    
+            <p>
+                This is a test paragraph. It is meant to contain the information of the specific category. 
+            </p>
+            
+            </div>
 
-        <p>
-        jas dlgasdk lgnaslk jcviowja eojasd
-        sdklg jasd
-        asdgj klsdaga
-        asd fkas jfl jasfa djlfa
-        gja dkl sg
-        </p>
         
-        </div>
-
-        <!-- <div class="ci_btn">
-            <button> Subscribe </button>
-        </div> -->
+    </div>
     </div>
 
     <!-- post area -->
-    <div class="posts_box">
+    <div class="posts_box col-8 row">
         
 
         <!-- the posts -->
-        <div class="posts">
-            <div>
-                <label for="name">Posted by name1</label>
-                <br>
-                <br>
-                <p>Alks sdafjasd agaljgasj  aj  ajfas f asjdf a ja ja jfka j a fas fnas 
-                    alks sdafjasd agaljgasj  aj  ajfas f asjdf a ja ja jfka j a fas fnas
-                    alks sdafjasd agaljgasj  aj  ajfas f asjdf a ja ja jfka j a fas fnas
-                    alks sdafjasd agaljgasj  aj  ajfas f asjdf a ja ja jfka j a fas fnas
-                    alks sdafjasd agaljgasj  aj  ajfas f asjdf a ja 
-
-                    alks sdafjasd agaljgasj  aj  ajfas f asjdf a ja ja jfka j a fas fnasalks sdafjasd agaljgasj  aj  ajfas f asjdf a ja ja jfka j a fas fnas
-                    alks sdafjasd agaljgasj  aj  ajfas f asjdf a ja ja jfka j a fas fnas
-                    alks sdafjasd agaljgasj  aj  ajfas f asjdf a ja ja jfka j a fas fnas
-
-                    aflsdjakfdjaljdflakjdlasjg
-                </p>
-                <br>
-                <label for="likes">Likes:191 Comments:73</label>
+        <div class="posts col-7">
+            <div class="p-3">
+                <label for="name">Posted by vasilis</label>
+                    <br>
+                    <br>
+                    <p>This is a test-paragraph.</p>
+                    <br>
+                    <label for="likes" class="likesNumber0">Likes:1 Comments:0</label>
+                    <br>
+                    <button class="likeBtn px-4 py-1 " id="b10">Like</button>
+                    <button class="px-3 py-1 mx-2" id="b20">Comment</button>
             </div>
 
         </div>
 
         <!-- create posts -->
-        <div class="comment_box">
-            <div class="post_comment">
+        <div class="comment_box col-7 mt-5">
+            <div class="post_comment p-2">
                 <textarea id="c_posts" class="txtArea" name="c_posts" rows="4" cols="50" placeholder="Answer here..."></textarea>
                 <button class="txtAreaBtn"> Comment</button>
             </div>
 
-            <div class="the_comment">
-                <label for="name">name1</label>
-                <br>
-                <br>
-                <p>Alks sdafjasd agaljgasj  aj  ajfas f asjdf a ja ja jfka j a fas fnas 
-                    adksgja
-                     gad
-                     gadghahahakfd asd kfjakl akl askl aks aks jkas jka jkljfejofajk jakfj asdkf a
-                </p>
-                <br>
-                <label for="likes">Likes:191</label>
-                
-            </div>
+            <ul>
+                <li id="a0">
+                    <div class="the_comment">
+                        <label for="name">vasilis</label>
+                        <br>
+                        <br>
+                        <p id="p0">
+                            This is a test-comment on this post.
+                        </p>
+                        <br>
+                        <label for="likes" class="likesComments0">Likes:0</label>
+                        <br>
+                        <button class="likeBtn px-4 py-1 " id="b10">Like</button>
+                        
+                    </div>
+                </li>
 
-            <div class="the_comment">
-                <label for="name">name1</label>
-                <br>
-                <br>
-                <p>Alks sdafjasd agaljgasj  aj  ajfas f asjdf a ja ja jfka j a fas fnas 
-                    adksgja
-                     gad
-                     gadghahahakfd asd kfjakl akl askl aks aks jkas jka jkljfejofajk jakfj asdkf a
-                     dksgja
-                     gad
-                     gadghahahakfd asd kfjakl akl askl aks aks jkas jka jkljfejofajk jakfj asdkf a
-                     dksgja
-                     gad
-                     gadghahahakfd asd kfjakl akl askl aks aks jkas jka jkljfejofajk jakfj asdkf a
-                </p>
-                <br>
-                <label for="likes">Likes:191</label>
-                
-            </div>
-
+            </ul>
         </div>
 
 
     </div>
 
     </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js "></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js "></script>
+    
+    <script src="js/comments.js"></script>
     
 </body>
 </html>
