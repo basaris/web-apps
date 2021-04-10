@@ -59,7 +59,7 @@ inputBtn.addEventListener("click", function() {
     p.appendChild(document.createTextNode(a));
     div.appendChild(br3);
     div.appendChild(lab2);
-    lab2.appendChild(document.createTextNode("Likes:0   "));
+    lab2.appendChild(document.createTextNode("Likes:0"));
     div.appendChild(br4);
     div.appendChild(b1);
     b1.appendChild(document.createTextNode("Like"));

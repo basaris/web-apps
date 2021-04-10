@@ -1,0 +1,47 @@
+/* ------------- head ------------*/
+.head{
+    background-color: #FF4242 ;
+    display: flex;
+    z-index: 10;
+}
+.head .logo{
+    color: white;
+    font-size: 2.4em; 
+    
+}
+
+.search img{
+    background: white;
+
+    border-radius:  12% 0% 0% 12%;
+    max-height: 33px;
+}
+.searchbar{
+    max-height: 33px;
+    width: 70%;
+    padding: 0.1em 0.3em;
+    font-size: 1.2em;
+    border-radius: 0px 12px 12px 0px;
+    border:0px;
+    outline: none;
+}
+
+.dropdown button{
+    background-color: #FF4242;
+    border-radius: 10px;
+    border: 2px solid black;
+    outline: none;
+}
+
+.head{
+    position: sticky;
+    top: 0;
+    
+  }
+
+@media (max-width: 608px){
+    .headname{
+        display: none;
+    }
+}
+  
