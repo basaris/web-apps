@@ -21,3 +21,13 @@ var swiper = new Swiper('.swiper-container', {
         prevEl: '.swiper-button-prev',
     },
 });
+
+// TOGGLE NEW POST
+$(document).ready(function() {
+    $(".env").click(function() {
+        $(".overlay").toggleClass("active");
+    })
+    $(".close").click(function() {
+        $(".overlay").toggleClass("active");
+    })
+})
