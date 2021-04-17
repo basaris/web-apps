@@ -27,25 +27,37 @@
     <div class="container-fluid">
     <!-- head -->
     <div class="head row">
+
         <div class="logo col-3">
             <!-- <img src="image/logo.png" alt="formumpic"> -->
-            <label for="headname" class="headname">ReadIT</label>
+            <a href="front-page.html">
+                <div class="logo2">
+                    <label for="headname" class="headname"> ReadIT</label>
+                </div>
+            </a>
         </div>
+
 
         <div class="search col-6 my-3 row">
             <img src="image/search_pic.png" alt="searchbar" class="p-1">
-            <input type="search" class="searchbar" id="searchbar" placeholder="Search...">
+            <input type="search" class="searchbar " id="searchbar" placeholder="Search...">
         </div>
 
-        <!-- <label for="username" class="username">nickname</label> -->
         <div class="dropdown col-3 my-auto">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              username
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="display: block;">
+                username
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="profile.html">View profile</a>
+                <a class="dropdown-item" href="profile.html">View profile</a>
             </div>
-          </div>
+
+            <button class="loginBtn btn btn-secondary" type="button" style="display: none;">
+                <a href="login-signup.html">
+                log in
+                </a>
+            </button>
+        </div>
     </div>
 
     
