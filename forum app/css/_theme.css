@@ -232,12 +232,12 @@ form .btn input[type="submit"] {
 
 /* NEW POST */
 
-.env {
+.new-post {
     z-index: 1;
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background: #69A297;
+    background: #FF4242;
     color: aliceblue;
     width: 60px;
     height: 60px;
@@ -249,18 +249,18 @@ form .btn input[type="submit"] {
     transition: .5s;
 }
 
-.env:hover {
-    background: #84B59F;
+.new-post:hover {
+    background: #ff4242c5;
 }
 
 .overlay {
     z-index: 100;
-    position: absolute;
+    position: fixed;
     bottom: 56px;
     right: 0px;
     width: 100%;
-    height: 100vh;
-    background: #1E2E34;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
     opacity: 0.9;
     transition: .5s;
     transform: scale(0);
@@ -287,7 +287,7 @@ form .btn input[type="submit"] {
     height: auto;
     min-height: 400px;
     max-width: 600px;
-    background: linear-gradient(217deg, #50808E, rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, #84B59F, rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, #69A297, rgba(0, 0, 255, 0) 70.71%);
+    background: #ff4242bb;
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
     padding: 40px 40px 60px;
     box-sizing: border-box;

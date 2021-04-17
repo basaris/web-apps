@@ -24,7 +24,7 @@ var swiper = new Swiper('.swiper-container', {
 
 // TOGGLE NEW POST
 $(document).ready(function() {
-    $(".env").click(function() {
+    $(".new-post").click(function() {
         $(".overlay").toggleClass("active");
     })
     $(".close").click(function() {
