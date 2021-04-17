@@ -1,7 +1,6 @@
 <!--Login - SignUp File-->
 
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
@@ -23,7 +22,8 @@
     <link rel="icon" href="image/logo.png" type="image/x-icon">
     <link rel="stylesheet " href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css ">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
-    <link rel="stylesheet " href="css/_theme.css">
+    <link rel="stylesheet" href="css/categories_style.css">
+    <link rel="stylesheet " href="css/navbar_style.css">
 </head>
 
 <body id="page-template-login ">
@@ -35,32 +35,31 @@
             <nav class="nav">
 
                 <div class="container-fluid">
-
-                    <div class="row py-3">
-
-                        <div class="col-3 col-sm-4">
-
-                            <h4 class="logo-title">ReadIT</h4>
-
+                    <!-- head -->
+                    <div class="head row">
+                        <div class="logo col-3">
+                            <!-- <img src="image/logo.png" alt="formumpic"> -->
+                            <i class="fas fa-users"></i>
+                            <label for="headname" class="headname"> ReadIT</label>
                         </div>
 
-                        <div class="col-7 search my-auto">
-
-                            <img class="p-1 bg-light" src="image/search_pic.png" alt="searchbar">
-
+                        <div class="search col-6 my-3 row">
+                            <img src="image/search_pic.png" alt="searchbar" class="p-1">
+                            <!-- <i class="fas fa-user"></i> -->
                             <input type="search" class="searchbar" id="searchbar" placeholder="Search...">
-
                         </div>
 
-                        <div class="col-1 text-sm-center text-right my-auto pr-xs-1">
-
-                            <i class="fas fa-user-alt"></i>
-
+                        <!-- <label for="username" class="username">nickname</label> -->
+                        <div class="dropdown col-3 my-auto">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-user"></i>
+                              username
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="profile.html">View profile</a>
+                            </div>
                         </div>
-
                     </div>
-
-                </div>
 
             </nav>
 
