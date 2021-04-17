@@ -24,7 +24,9 @@ inputBtn.addEventListener("click", function() {
           return;
         }
         //append li to ul 
+        
         var li=document.createElement("li");
+        var ah=document.createElement("a");
         var div=document.createElement("div");
         var lab1=document.createElement("label");
         var br1=document.createElement("br");
@@ -37,6 +39,7 @@ inputBtn.addEventListener("click", function() {
         var b2 = document.createElement("button");
 
         //put id and class
+        ah.href = "comments.html";
         li.id = "a"+countId.toString();
         lab1.id = "l1"+countId.toString();
         p.id = "p"+countId.toString();
@@ -50,7 +53,9 @@ inputBtn.addEventListener("click", function() {
 
 
         //create the post 
-        li.appendChild(div);
+        li.appendChild(ah);
+        ah.appendChild(div);
+        
         div.appendChild(lab1);
         lab1.appendChild(document.createTextNode("Posted by vasilis"));
         div.appendChild(br1);
