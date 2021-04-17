@@ -277,7 +277,7 @@ form .btn input[type="submit"] {
     height: 110%;
 }
 
-.newsletter {
+.add-post {
     opacity: 1;
     position: absolute;
     top: 50%;
@@ -293,7 +293,7 @@ form .btn input[type="submit"] {
     box-sizing: border-box;
 }
 
-.newsletter .close {
+.add-post .close {
     opacity: 1;
     position: absolute;
     top: -24px;
@@ -316,7 +316,7 @@ form .btn input[type="submit"] {
     text-align: center;
 }
 
-.newsletter h3 {
+.add-post h3 {
     margin: 0;
     padding: 0;
     text-align: center;
@@ -325,7 +325,7 @@ form .btn input[type="submit"] {
     text-transform: uppercase;
 }
 
-.newsletter p {
+.add-post p {
     margin: 0;
     padding: 0;
     text-align: center;
@@ -376,7 +376,7 @@ form .btn input[type="submit"] {
 /*.subscribe-form input[type="submit"]:hover {}*/
 
 @media(max-width:1100px) {
-    .newsletter {
+    .add-post {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
