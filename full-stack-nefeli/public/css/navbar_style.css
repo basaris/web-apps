@@ -1,0 +1,30 @@
+/* ------------- head ------------*/
+.head{
+    background-color: #FF4242 ;
+    display: flex;
+    z-index: 10;
+}
+
+.head .logo{
+    font-size: 2em; 
+}
+
+.search img{
+    border-radius:  12% 0% 0% 12%;
+    max-height: 33px;
+}
+.searchbar{
+    max-height: 33px;
+    width: 70%;
+    padding: 0.1em 0.3em;
+    font-size: 1.2em;
+    border-radius: 0px 12px 12px 0px;
+    outline: none;
+}
+
+.dropdown button{
+    background-color: #FF4242;
+    border-radius: 10px;
+    border: 1px solid white;
+    outline: none;
+}  
