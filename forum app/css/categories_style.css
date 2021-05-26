@@ -48,7 +48,7 @@
     background: white;
     list-style-type: none;
 
-    text-decoration-line: underline;
+    text-decoration-line: none;
 
     overflow: auto;
 }
@@ -60,7 +60,7 @@
 /* -----upper body---------- */
 .upper-body{
     background: rgb(180, 180, 180);
-    
+
 }
 
 .upper-body label{
@@ -110,4 +110,10 @@
 .main-body ul li:hover{
 
     box-shadow: 1px 2px black;
+}
+
+@media (max-width: 1300px){
+    .left-body{
+        display: none;
+    }
 }

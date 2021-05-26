@@ -210,11 +210,11 @@ form .btn input[type="submit"] {
     cursor: pointer;
 }
 
-.swiper-slide {
+/* .swiper-slide {
     text-align: center;
     font-size: 18px;
     background: #fff;
-    /* Center slide text vertically */
+    
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -227,6 +227,15 @@ form .btn input[type="submit"] {
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
+
+    
+} */
+
+
+
+.swiper-slide a{
+    text-decoration: none;
+    color: black;
 }
 
 
@@ -411,8 +420,99 @@ form .btn input[type="submit"] {
 }
 
 .all-categories a {
-
-
     text-decoration: none;
     color: initial;
+}
+
+
+/* apo dw kai katw to egrapsa egw opote prosexe */
+
+/* trending posts */
+.swiper-slide div:first-child {
+    background-color:rgba(0, 0, 0, .6);
+    border-radius: 10px;
+    color: white;
+}
+
+.swiper-slide .card{
+    padding: 10px;
+}
+
+
+.labelName{
+    padding: 5px;
+    /* width: 50%; */
+    margin: 5px;
+    text-align: center;
+    background: rgb(54, 53, 53);
+    border-radius: 6px;
+    font-size: 1.1rem;
+}
+
+.labelName span{
+    color: rgb(240, 102, 102);
+    font-size: 1rem;
+}
+
+.labelName span:hover{
+    color: rgb(241, 50, 50);
+}
+
+
+
+.swiper-slide a {
+    text-decoration: none;
+    color: initial;
+}
+
+.trending-title{
+    background-color: #FF4242;
+    width: 30%;
+    text-align: center;
+    color: white;
+    padding: 7px;
+    border-radius: 10px;
+}
+
+.top-categories{
+    background-color: #FF4242;
+    width: 50%;
+    text-align: center;
+    color: white;
+    padding: 7px;
+    border-radius: 10px;
+}
+
+/*  top posts */
+
+.card{
+    background-color:rgba(0, 0, 0, .6);
+    color: white;
+}
+
+.card .card-header{
+    background-color:rgb(54, 53, 53);
+    font-size: 1.1rem;
+}
+
+.card .card-header span{
+    color:rgb(240, 102, 102);
+    font-size: 1rem;
+}
+
+.card .card-header span:hover{
+    color:rgb(241, 50, 50);
+    cursor:default;
+}
+
+/* categories */
+
+.all-categories .list-group-item{
+    background-color:rgba(0, 0, 0, .6);
+    color: white;
+    font-size: 1.1rem;
+}
+
+.all-categories .list-group-item span{
+    color: rgb(240, 102, 102);
 }
