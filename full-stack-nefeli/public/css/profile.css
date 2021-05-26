@@ -1,0 +1,24 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+
+
+.profile-pic{
+      zoom: 50%;
+}
+
+
+
+.info-table table tr th{
+
+    padding: 10px;
+    
+    /* border: 2px solid black; */
+}
+
+.info-table table tr th:first-child{
+    text-decoration-line: underline;
+}
+
