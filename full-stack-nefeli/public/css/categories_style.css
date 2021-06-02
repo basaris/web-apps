@@ -13,60 +13,67 @@
 /* ----left body------ */
 .left-body{
     background: rgba(0, 0, 0, .6);
-    /* width: 20%; */
+
     height: 55em;
     border-right: 2px solid black;
     border-bottom: 2px solid black;
 }
 .left-body div:nth-child(1){
-    /* background: blue; */
-    /* margin: 1em 3em 0.5em; */
-    font-size: 1.5em;
+    font-size: 1.7em;
     color: white;
 }
 
 .left-body div:nth-child(3){
-    /* margin: 1em 3em 0.5em; */
     font-size: 1.5em;
     color: white;
 }
 
 .left-body div:nth-child(3) input{
     transform: scale(1.2);
+
+}
+
+.left-body div:nth-child(4) input{
+    font-size: 1.1em;
+    border-radius: 0.5rem;
+    outline: none;
+    border: none;
+    padding: 0.4rem 0.5rem;
+    width: 90%
 }
 
 .categ-list{
-    /* margin: 0em 3em;
-    padding: 0.5em; */
     width: 12em;
     
-    font-size: 1.1em;
+    font-size: 1.2em;
     height: 13em;
     
     border: 2px solid black;
     border-radius: 0.3em;
-    background: white;
+    background: rgb(61, 61, 61);
     list-style-type: none;
-
-    text-decoration-line: underline;
+    color: white;
+    text-decoration-line: none;
 
     overflow: auto;
 }
 
 .categ-list li{
-    padding: 0.1em;
+    padding: 0.2em;
+    margin: 0.3em 0em;
 }
 
+.categ-list li:hover{
+    color: rgb(240, 102, 102);
+}
 /* -----upper body---------- */
 .upper-body{
     background: rgb(180, 180, 180);
-    
+
 }
 
 .upper-body label{
     font-size: 3em;
-    /* margin: 0em 0em 0em 11em;
-    padding: 0.1em 2em; */
     background: rgba(0, 0, 0, .6);
     border-radius: 0.3em;
     
@@ -82,6 +89,10 @@
     color: white;
     outline: none;
 }
+.upper-body button:hover{
+    background: rgb(236, 86, 86);
+}
+
 .upper-body select{
     border-radius: 0.3em;
     background: rgba(0, 0, 0, .6);
@@ -95,6 +106,7 @@
 
 .main-body ul li{
     background: rgba(0, 0, 0, .6);
+    font-size: 1rem;
     margin: 1em;
     padding: 1.5em;
     width: 15em;
@@ -108,6 +120,12 @@
 }
 
 .main-body ul li:hover{
+    background: rgb(236, 86, 86);
+    box-shadow: 4px 8px black;
+}
 
-    box-shadow: 1px 2px black;
+@media (max-width: 1300px){
+    .left-body{
+        display: none;
+    }
 }

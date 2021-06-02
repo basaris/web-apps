@@ -1,6 +1,8 @@
 // requires
 const express = require('express')
 //const mysql = require('mysql')
+const exphbs = require('express-handlebars');
+
 
 
 // initialize app
@@ -20,12 +22,16 @@ app.use('/js', express.static(__dirname + 'public/js'))
 
 // templating engine
 app.set('views', './src/views')
-app.set('view engine', 'ejs')
+//app.set('view engine', 'ejs')
 
+app.engine('hbs', exphbs({
+    extname: '.hbs'
+}));
+
+app.set('view engine', 'hbs');
 
 // routes
 const router = require('./src/routes/front-page')
-
 
 
 // home page
