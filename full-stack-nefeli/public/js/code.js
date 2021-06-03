@@ -1,9 +1,6 @@
 function swiper_resp(window) {
-    if ($(window).width() < 1200) {
+    if ($(window).width() < 992) {
         spv = 2;
-    } 
-    if ($(window).width() < 775) {
-        spv = 1;
     } else spv = 3;
 }
 

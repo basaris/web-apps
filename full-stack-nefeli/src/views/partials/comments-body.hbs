@@ -1,0 +1,101 @@
+<!-- The categorie name -->
+    <div class="categorie-name text-center row">
+        <div class="backBtn col-2 my-5">
+            <a href="/posts:{{CategoryName}}">
+                <button ><i class="fas fa-arrow-circle-left pr-2"></i>All posts</button>
+            </a>
+        </div>
+        <div class="col-8 ml-3">
+            <h1 class="my-5 px-5 py-2 ml-5">{{CategoryName}}</h1>
+        </div>
+    </div>
+
+    
+    <div class="the_body row">
+    <!-- Categorie information -->
+    <div class="col-4">
+    <div class="categorie-info col-9">
+        <div class="ci_box m-3 p-5">
+            <table>
+                <tr>
+                    <th>Categorie: </th>
+                    <th>Testing the site</th>
+                </tr>
+                <tr>
+                    <th>Posts: </th>
+                    <th>1</th>
+                </tr>
+                <tr>
+                    <th>Created by:</th>
+                    <th>vasilis</th>
+                </tr>
+                <tr>
+                    <th>Subscribed:</th>
+                    <th>0</th>
+                </tr>
+            </table>
+            <br>
+            <p><strong>More information: </strong> </p>
+            <br>
+    
+            <p>
+                This is a test paragraph. It is meant to contain the information of the specific category. 
+            </p>
+            
+            </div>
+
+        
+    </div>
+    </div>
+
+    <!-- post area -->
+    <div class="posts_box col-8 row">
+        
+
+        <!-- the posts -->
+        <div class="posts col-7">
+            <div class="p-3">
+                <label for="name">Posted by vasilis</label>
+                    <br>
+                    <br>
+                    <p>This is a test-paragraph.</p>
+                    <br>
+                    <label for="likes" class="likesNumber0">Likes:1 Comments:0</label>
+                    <br>
+                    <button class="likeBtn px-4 py-1 " id="b10">Like</button>
+                    <button class="px-3 py-1 mx-2" id="b20">Comment</button>
+            </div>
+
+        </div>
+
+        <!-- create posts -->
+        <div class="comment_box col-7 mt-5">
+            <div class="post_comment p-2">
+                <textarea id="c_posts" class="txtArea" name="c_posts" rows="4" cols="50" placeholder="Answer here..."></textarea>
+                <button class="txtAreaBtn"> Comment</button>
+            </div>
+
+            <ul>
+                <li id="a0">
+                    <div class="the_comment">
+                        <label for="name"><span><i class="far fa-user-circle m-1"></i> vasilis</span></label>
+                        <br>
+                        <br>
+                        <p id="p0">
+                            This is a test-comment on this post.
+                        </p>
+                        <br>
+                        <label for="likes" class="likesComments0">Likes:0</label>
+                        <br>
+                        <button class="likeBtn px-4 py-1 " id="b10">Like</button>
+                        
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+
+
+    </div>
+
+    </div>

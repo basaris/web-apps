@@ -1,0 +1,72 @@
+<section id="main" class="main">
+            <div class="container mt-5">
+                <section id="trending-posts" class="trending-posts mb-5">
+                    <h5 class="trending-title">Trending Posts</h5>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+
+                            {{#each trendingPosts}}
+                                <div class="swiper-slide">
+                                <a href="/comment:{{this.category}}">
+                                    <div class="card" style="width: 20rem;">
+                                        <label for="name" class="labelName"><span onclick="location.href='/profile:{{this.name}}';"><i class="far fa-user-circle m-1"></i>{{this.name}}</span>  <span># {{this.category}}</span></label>
+                                        <br>
+                                        <p style="min-height:4rem;">{{this.context}}</p>
+                                        <br>
+                                        <label for="likes" class="likesNumber0">Likes: {{this.numOfLikes}} Comments: {{this.numOfComm}}</label>
+                                    
+                                    </div>
+                                </a>
+                            </div>
+                            {{/each}}
+                        </div>
+
+                        
+                        <!-- Add Pagination -->
+                        <!-- <div class="swiper-pagination"></div> -->
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next " style="color: black;"></div>
+                        <div class="swiper-button-prev " style="color: black;"></div>
+                    </div>
+                </section>
+
+                <section id="top-posts" class="mt-5 pt-5">
+                    <h5 class="trending-title ml-2">Top Posts</h5>
+                    <div class="row p-2">
+                        <div class="col-12 col-md-8">
+                            {{#each topPosts}}
+                                <div class="card mb-2">
+                                    <div class="card-header">
+                                        <i class="far fa-user-circle ml-3 mr-1"></i>{{this.name}} <span onclick="location.href='/posts:{{this.category}}';">#{{this.category}}</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <br>
+                                        <p>{{this.context}}</p>
+                                        <br>
+                                        <label for="likes" class="likesNumber0">Likes: {{this.numOfLikes}} Comments:{{this.numOfComm}}</label>
+                                        
+                                    </div>
+                                </div>
+                            {{/each}}
+                        </div>
+                        <div class="all-categories col-0 col-md-4 b-1">
+                            <a href="categories">
+                                <h6 class="top-categories">Top categories</h6>
+                                <div class="category-list">
+                                    <ul class="list-group">
+                                        {{#each topCategories}}
+                                             <li class="list-group-item d-flex justify-content-between align-items-center">
+                                            #{{this.name}}
+                                            <span class="badge badge-dark badge-pill">{{this.numOfPosts}}</span>
+                                            </li>
+                                        {{/each}}
+
+                                    </ul>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+        </section>

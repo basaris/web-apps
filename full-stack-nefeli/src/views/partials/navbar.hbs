@@ -1,0 +1,43 @@
+<div class="head row">
+
+            <div class="logo col-3">
+                <!-- <img src="image/logo.png" alt="formumpic"> -->
+                
+                    <div class="logo2">
+                        
+                        <label for="headname" class="headname mx-3"><a href="/"><img src="image/6dots3.png" alt=""> ReadIT </a></label>
+                        
+                    </div>
+                
+            </div>
+
+
+            <div class="search col-6 my-3 row">
+                <img src="image/search_pic.png" alt="searchbar" class=" searchBtn p-1">
+                <input type="search" class="searchbar " id="searchbar" placeholder="Search...">
+                
+            </div>
+
+            <div class="dropdown col-3 my-auto">
+                
+
+                {{#if username}}
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="display: block;">
+                        <i class="far fa-user-circle  mr-1"></i> {{username}}
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="/profile">View profile</a>
+                        <a class="dropdown-item" href="/contact-us">Contact us</a>
+                        <a class="dropdown-item" href="/log-in" style="color: red;">Log out</a>
+                    </div>
+                {{else}}
+                    <button class="loginBtn btn btn-secondary" type="button" style="display: block;">
+                        <a href="/log-in">
+                        log in
+                        </a>
+                    </button>
+                {{/if}}
+
+            </div>
+        </div>
