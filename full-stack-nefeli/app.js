@@ -25,10 +25,12 @@ app.set('views', './src/views')
 //app.set('view engine', 'ejs')
 
 app.engine('hbs', exphbs({
-    extname: '.hbs'
+    extname: '.hbs',
+    defaultLayout: 'planB'
 }));
 
 app.set('view engine', 'hbs');
+
 
 // routes
 const router = require('./src/routes/front-page')
