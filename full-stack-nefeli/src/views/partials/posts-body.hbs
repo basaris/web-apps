@@ -1,12 +1,13 @@
 <!-- The categorie name -->
         <div class="categorie-name text-center row">
-            <div class="backBtn col-2 my-5">
+            <div class="backBtn col-1 col-lg-2 my-5">
                 <a href="/categories">
-                    <button><i class="fas fa-arrow-circle-left pr-2"></i>All categories</button>
+                    <button class="d-lg-inline d-none"><i class="fas fa-arrow-circle-left pr-2"></i>All categories</button>
+                    <button class="d-lg-none d-inline col-1"><i class="fas fa-arrow-circle-left pr-2"></i></button>
                 </a>
             </div>
-            <div class="col-8 ml-3">
-                <h1 class="my-5 px-5 py-2 ml-5">{{CategoryName}}</h1>
+            <div class="col-3 col-lg-8 ml-3">
+                <h1 class="my-5 px-3 py-2 ml-5 px-md-5">{{CategoryName}}</h1>
             </div>
         </div>
 
@@ -14,9 +15,9 @@
 
         <div class="the_body container-fluid row">
             <!-- Categorie information -->
-            <div class="col-4">
-                <div class="categorie-info col-9">
-                    <div class="ci_box m-3 p-5">
+            <div class="col-12  col-xl-4">
+                <div class="categorie-info col-9 ">
+                    <div class="ci_box m-3 p-5 d-none d-xl-block">
                         <table>
                             <tr>
                                 <th>Category:</th>
@@ -46,13 +47,13 @@
                     </div>
 
                     <div class="ci_btn">
-                        <button class=" mx-5 px-5 py-2"> Subscribe </button>
+                        <button class=" mx-5 px-5 py-2 mb-5"> Subscribe </button>
                     </div>
                 </div>
             </div>
 
             <!-- post area -->
-            <div class="posts_box col-5">
+            <div class="posts_box col-12 col-xl-5">
                 <!-- create posts -->
                 <div class="create_posts p-2">
                     <textarea id="c_posts" class="txtArea" name="c_posts" rows="4" cols="50"
@@ -65,7 +66,7 @@
                     <ul>
                         {{#each AllPosts}}
                             <li>
-                                <a href="/comment:{{CategoryName}}">
+                                <a href="/comment:{{../CategoryName}}">
                                     <div>
                                         <label for="name"><span><i class="far fa-user-circle m-1"></i> {{this.name}}</span></label>
                                         <br>

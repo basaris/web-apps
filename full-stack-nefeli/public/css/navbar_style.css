@@ -43,12 +43,6 @@
     min-width: 6rem;
 }
 
-@media (max-width: 608px){
-    .headname{
-        display: none;
-    }
-}
-
 .logo2 label a {
 
     text-decoration: none;

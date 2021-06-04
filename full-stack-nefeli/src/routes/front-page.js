@@ -36,6 +36,16 @@ const AllPosts= {num1:{name:"vasilis1", context:"this is a test.", numOfLikes:10
 
 const CategoryInfo = {name:'Categoryname', NumOfPosts:10, CreatedBy:'vasilis1', NumOfSubs:10, Context:'This is a test paragraph.'};
 
+const AllAnswers ={num1:{name:"vasilis1", context:"this is a test.", numOfLikes:10},
+                    num2:{name:"vasilis2", context:"this is a test.", numOfLikes:10},
+                    num3:{name:"vasilis3", context:"this is a test.", numOfLikes:10},
+                    };
+
+const post = {name:"vasilis", context:"this is a test.", numOfLikes:10, numOfComm:2};
+
+//profile info
+const profileInfo = {username:username, email:"saratsisbasilis@gmail.com", date:"3/6/2021", numPosts:32, numSubs:11, numLikes:11};
+
 //routes for GET REQUEST
 router.get('/', async(request, response) => {
     response.render('main',{layout: 'index', username:username, trendingPosts:trendingPosts, topPosts:topPosts, topCategories:topCategories});
@@ -50,15 +60,17 @@ router.get('/posts:CategoryID',async(request, response) => {
 })
 
 router.get('/comment:CategoryId',async(request, response) => {
-    response.render('main', {layout: 'comments', username:username, CategoryName:request.params.CategoryId.slice(1)});
+    response.render('main', {layout: 'comments', username:username, CategoryName:request.params.CategoryId.slice(1), CategoryInfo:CategoryInfo, post:post, AllAnswers:AllAnswers});
 })
 
 router.get('/profile',async(request, response) => {
-    response.render('main', {layout: 'profile', username:username});
+    response.render('main', {layout: 'profile', username:username, profileInfo:profileInfo});
 })
 
 router.get('/profile:username',async(request, response) => {
-    response.render('main', {layout: 'profileToOthers', username:username,usernameOfOther:request.params.username.slice(1)});
+    //profile:user info
+    const profileOthersInfo = {name:request.params.username.slice(1), email:"saratsisbasilis@gmail.com", date:"3/6/2021", numPosts:32, numSubs:11, numLikes:11};
+    response.render('main', {layout: 'profileToOthers', username:username, profileOthersInfo:profileOthersInfo});
 })
 
 router.get('/contact-us',async(request, response) => {

@@ -7,16 +7,16 @@
 
                             {{#each trendingPosts}}
                                 <div class="swiper-slide">
-                                <a href="/comment:{{this.category}}">
+                                    {{!-- prepei na valoume ta swsta hrefs --}}
                                     <div class="card" style="width: 20rem;">
-                                        <label for="name" class="labelName"><span onclick="location.href='/profile:{{this.name}}';"><i class="far fa-user-circle m-1"></i>{{this.name}}</span>  <span># {{this.category}}</span></label>
+                                        <label for="name" class="labelName"><span onclick="location.href='/profile:{{this.name}}';"><i class="far fa-user-circle m-1"></i>{{this.name}}</span>  <span onclick="location.href='/posts:{{this.category}}';"># {{this.category}}</span></label>
                                         <br>
-                                        <p style="min-height:4rem;">{{this.context}}</p>
+                                        <p style="min-height:4rem; cursor:pointer" onclick="location.href='/comment:{{this.category}}';">{{this.context}}</p>
                                         <br>
                                         <label for="likes" class="likesNumber0">Likes: {{this.numOfLikes}} Comments: {{this.numOfComm}}</label>
                                     
                                     </div>
-                                </a>
+
                             </div>
                             {{/each}}
                         </div>
@@ -41,7 +41,7 @@
                                     </div>
                                     <div class="card-body">
                                         <br>
-                                        <p>{{this.context}}</p>
+                                        <p style="min-height:4rem; cursor:pointer" onclick="location.href='/posts:{{this.category}}';">{{this.context}}</p>
                                         <br>
                                         <label for="likes" class="likesNumber0">Likes: {{this.numOfLikes}} Comments:{{this.numOfComm}}</label>
                                         
@@ -50,12 +50,11 @@
                             {{/each}}
                         </div>
                         <div class="all-categories col-0 col-md-4 b-1">
-                            <a href="categories">
-                                <h6 class="top-categories">Top categories</h6>
+                                <h6 class="top-categories" ><a href="/categories" style="color: white;"> Top categories</a></h6>
                                 <div class="category-list">
                                     <ul class="list-group">
                                         {{#each topCategories}}
-                                             <li class="list-group-item d-flex justify-content-between align-items-center">
+                                             <li class="list-group-item d-flex justify-content-between align-items-center" onclick="location.href='/posts:{{this.name}}';">
                                             #{{this.name}}
                                             <span class="badge badge-dark badge-pill">{{this.numOfPosts}}</span>
                                             </li>
@@ -63,7 +62,7 @@
 
                                     </ul>
                                 </div>
-                            </a>
+
                         </div>
                     </div>
 

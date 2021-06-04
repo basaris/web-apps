@@ -6,10 +6,6 @@
   
 /* -------body---------- */
 
-/* .body{
-    
-} */
-
 /* ----left body------ */
 .left-body{
     background: rgba(0, 0, 0, .6);
@@ -123,9 +119,23 @@
     background: rgb(236, 86, 86);
     box-shadow: 4px 8px black;
 }
+.dropdownBtn{
+    display: none;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+}
 
-@media (max-width: 1300px){
+@media (max-width: 1200px){
     .left-body{
+        height: auto;
+    }
+    .dropdownBtn{
+        display: block;
+    }
+
+    .left-body div:not(.dropdownBtn){
         display: none;
     }
+
 }

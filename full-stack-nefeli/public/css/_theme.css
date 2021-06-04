@@ -425,6 +425,7 @@ form .btn input[type="submit"] {
 
 .all-categories .top-categories:hover {
     border: 2px solid black;
+    cursor: pointer;
 }
 
 
@@ -491,6 +492,7 @@ form .btn input[type="submit"] {
     padding: 7px;
     border-radius: 10px;
     border: 2px solid white;
+
 }
 
 /*  top posts */
@@ -512,7 +514,6 @@ form .btn input[type="submit"] {
 
 .card .card-header span:hover{
     color:rgb(241, 50, 50);
-    cursor:default;
 }
 
 /* categories */
@@ -529,4 +530,5 @@ form .btn input[type="submit"] {
 
 .all-categories .list-group-item:hover{
     color: rgb(240, 102, 102);
+    cursor: pointer;
 }

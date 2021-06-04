@@ -1,5 +1,5 @@
 <div class="body row">
-            <div class="left-body col-2">
+            <div class="left-body col-12 col-xl-2">
                 
                 <div class="mx-4 mt-4">
                     <label for="categorie">Categories</label>
@@ -28,16 +28,25 @@
                     <input type="text" placeholder="Created by...">
                 </div>
 
-            </div>
+                <div class="dropdownBtn">
+                    <i class="fas fa-bars"></i>
+                </div>
 
-            <div class="right-body col-10">
+            </div>
+            
+            
+
+            <div class="right-body col-12 col-xl-10">
                 <div class="upper-body row">
                     <div class="upper-body-dom col-12 row">
-                        <div class="col-6 text-right">
+                        <div class="col-9 col-sm-6 text-right">
                             <label for="categ-h1" class="m-3 px-4">Categories</label>
                         </div>
-                        <div class="col-6">
-                            <button class="my-5"> + Request New Categorie</button>
+                        <div class="reqNewCat col-6 d-sm-block d-none">
+                            <button class="mt-5"> + Request New Categorie</button>
+                        </div>
+                        <div class="reqNewCat col-2 d-sm-none d-block">
+                            <button class="my-5"> + </button>
                         </div>
                         <select name="choose-by" class="choose-by mx-4">
                             <option value="all">All</option>
